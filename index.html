@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="description" content="Calculator">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display" id="display">0</div>
+      <div id="text-measure" class="text-measure"></div>
+      <div class="buttons">
+        <button class="button topRow" onclick="clearDisplay()"><span>AC</span></button>
+        <button class="button topRow" onclick="toggleSign()"><span>±</span></button>
+        <button class="button topRow" onclick="percentage()"><span>%</span></button>
+        <button class="button operator" onclick="setOperation('/', this)"><span>&#247;</span></button>
+        <button class="button" onclick="appendNumber('7')"><span>7</span></button>
+        <button class="button" onclick="appendNumber('8')"><span>8</span></button>
+        <button class="button" onclick="appendNumber('9')"><span>9</span></button>
+        <button class="button operator" onclick="setOperation('*', this)"><span>&#215;</span></button>
+        <button class="button" onclick="appendNumber('4')"><span>4</span></button>
+        <button class="button" onclick="appendNumber('5')"><span>5</span></button>
+        <button class="button" onclick="appendNumber('6')"><span>6</span></button>
+        <button class="button operator" onclick="setOperation('-', this)"><span>-</span></button>
+        <button class="button" onclick="appendNumber('1')"><span>1</span></button>
+        <button class="button" onclick="appendNumber('2')"><span>2</span></button>
+        <button class="button" onclick="appendNumber('3')"><span>3</span></button>
+        <button class="button operator" onclick="setOperation('+', this)"><span>+</span></button>
+        <button class="button zero" onclick="appendNumber('0')"><span>0</span></button>
+        <button class="button" onclick="appendDot()"><span>.</span></button>
+        <button class="button operator equals" onclick="calculate()"><span>=</span></button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
